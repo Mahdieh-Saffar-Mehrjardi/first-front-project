@@ -58,3 +58,10 @@ sidebarListhover.forEach(function(item){
         sidebarMenu.classList.remove('sidebar-unset')
     })
 })
+
+// dark button
+let darkbtn = document.querySelector('.dark-button')
+
+darkbtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark')
+})
