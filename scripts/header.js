@@ -1,3 +1,32 @@
+// loading
+let loding = document.querySelector('.loding')
+window.addEventListener('load',function(){
+    loding.style.display = 'none'
+})
+
+// go top button
+let goTop = document.querySelector('.go-top-button')
+
+window.addEventListener('scroll',function(){
+    if (window.scrollY >= 700) {
+        goTop.style.display = 'block'
+
+    } else {
+        goTop.style.display = 'none'
+    }
+})
+
+const scrollWindow = function () {
+    if (window.scrollY != 0) {
+        setTimeout(function () {
+            window.scrollTo(0, window.scrollY - 50);
+            scrollWindow();
+        }, 10);
+    }
+};
+
+goTop.addEventListener('click',scrollWindow);
+
 // header js
 let sidebar = document.querySelector('.sidebar-back')
 let sidebarMenu = document.querySelector('.sidebar-menu')
