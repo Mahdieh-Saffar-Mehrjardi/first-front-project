@@ -22,6 +22,101 @@ ul {
     list-style-type: none;
 } */
 
+/* dark mode */
+
+body.dark{
+    background-color: #2b2b2b;
+    transition: all 0.3s ease;
+    color: #cfd4da;
+}
+
+.dark .title{
+    background-color: #232323;
+    transition: all 0.3s ease;
+}
+
+.dark h2 ,
+.dark a,
+.dark h5,
+.dark .right-bottom p{
+    color: #cfd4da;
+}
+
+.dark .home-title{
+    color: #cfd4da;
+}
+
+.dark .category-box,
+.dark .app-services{
+    border-color: #404040;
+    background-color: #2b2b2b;
+    transition: all 0.3s ease;
+}
+
+.dark .category-title,
+.dark .category-title::after,
+.dark h3{
+    color: #eaedef;
+}
+
+.dark .dash-border,
+.dark .border-product,
+.dark .product-icon,
+.dark .new-product-top-section,
+.dark .right-bottom ul{
+    border-color: #404040;
+}
+
+.dark .dash-border h6,
+.dark .border-product h6,
+.dark .product-reminder-box p{
+    color: #cfd4da;
+}
+
+.dark .quantity-btn,
+.dark .quantity-num{
+    background-color: inherit;
+    border-color: #404040;
+}
+
+.dark .wish-box{
+    color: #cbcbcb;
+}
+
+.dark .product-reminder-box{
+    background-color: #232323;
+    transition: all 0.3s ease;
+}
+
+.dark .app-services{
+    border-color: #404040;
+}
+
+.dark .new_angle_left,
+.dark .new_angle_right {
+    color: #eaedef;
+}
+
+.dark .writeReview input,
+.dark .writeReview textarea{
+    background-color: inherit;
+    border-color: #404040;
+}
+
+.dark .product-h2{
+    color: #f1f3f5;
+    border-color: #404040;
+}
+
+.dark .product-name{
+    color: #cfd4da;
+}
+
+.dark .discounted-price{
+    color: #e7eaec;
+}
+
+
 /* title design */
 
 .title {
