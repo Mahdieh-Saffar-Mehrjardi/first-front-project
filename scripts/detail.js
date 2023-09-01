@@ -79,10 +79,114 @@ function changeSlid() {
 angleLeft.addEventListener('click', changeSlid)
 angleRight.addEventListener('click', changeSlid)
 
+// increase and decrease the quantity
 
+let quantityLeft = $.querySelector('.quantity-left')
+let quantityRight = $.querySelector('.quantity-right')
+let quantityNum = $.querySelector('.quantity-num')
+let quantityButtons = $.querySelectorAll('.btn-solid')
+let stock = $.querySelector('.stock')
 
+quantityRight.addEventListener('click',function(){
+    let num = quantityNum.innerHTML
+    num++
+    quantityNum.innerHTML = num
+    if (num > 15){
+        stock.innerHTML = 'Out of stock'
+        quantityButtons.forEach(function(item){
+            item.classList.replace('able','disable')
+            item.href = 'URL:void(0)'
+        })
+    }
+})
 
+quantityLeft.addEventListener('click',function(){
+    let num = quantityNum.innerHTML
+    if(num > 1){
+        num --
+        quantityNum.innerHTML = num
+    }
+    if(num <= 15){
+        stock.innerHTML = 'In stock'
+        quantityButtons.forEach(function(item){
+            item.classList.replace('disable','able')
+            item.href = ''
+        })
+    }
+})
 
+// change image
+
+let mainImg = $.querySelector('.main-image')
+let productImgs = $.querySelectorAll('.product-images')
+let oldSrc = mainImg.src
+productImgs.forEach(img => {
+    img.addEventListener('click', () => {
+        productImgs.forEach(image => {
+            if (image.src == oldSrc) {
+                image.classList.remove('selected-img')
+            }
+        })
+        console.log(img.src);
+        mainImg.src = img.src
+        img.classList.add('selected-img')
+        oldSrc = img.src
+    })
+})
+
+// reminder box
+
+let day = $.querySelector('.day')
+let hour = $.querySelector('.hour')
+let minute = $.querySelector('.minute')
+let second = $.querySelector('.second')
+
+setInterval(function () {
+
+    let time = new Date()
+
+    let dayValue = 800 - time.getDay()
+    let hoursValue = time.getHours()
+    let minutesValue = time.getMinutes()
+    let secondsValue = time.getSeconds()
+
+    day.innerHTML = `-${dayValue}`
+    hour.innerHTML = `-${hoursValue}`
+    minute.innerHTML = `-${minutesValue}`
+    second.innerHTML = `-${secondsValue}`
+}, 1000)
+
+// container bottom
+
+let description = $.querySelector('.description-title')
+let descriptionContent = $.querySelector('.description-content')
+let video = $.querySelector('.video-title')
+let videoContent = $.querySelector('.video-content')
+let writeReview = $.querySelector('.write-review-title')
+let writeReviewContent = $.querySelector('.writeReview-content')
+let selectedElem = description
+let showContent = descriptionContent
+
+function change(newElem, newContent){
+    selectedElem.classList.remove('active')
+    showContent.classList.replace('show','unshow')
+    newElem.classList.add('active')
+    newContent.classList.replace('unshow','show')
+    selectedElem = newElem
+    showContent = newContent
+}
+
+description.addEventListener('click', () => {
+    change(description, descriptionContent)
+})
+
+video.addEventListener('click', () => {
+    change(video, videoContent)
+})
+
+writeReview.addEventListener('click', () => {
+    change(writeReview, writeReviewContent)
+})
 
 // related products section js
 

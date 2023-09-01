@@ -22,7 +22,6 @@ ul {
     list-style-type: none;
 } */
 
-
 /* title design */
 
 .title {
@@ -477,7 +476,8 @@ ul {
     margin-left: 6px;
 }
 
-.btn-solid{
+.btn-solid,
+.submit-btn{
     padding: 7px 25px;
     color: #ffffff;
     letter-spacing: 0.05em;
@@ -494,7 +494,8 @@ ul {
     border-radius: 0;
 }
 
-.btn-solid:hover{
+.btn-solid:hover,
+.submit-btn:hover{
     color: #222222;
     background-color: #fff;
     background-position: 100%;
