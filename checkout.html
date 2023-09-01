@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MultiKart Ecommerce Angular 15 | Angular Ecommerce Template</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=M+PLUS+Rounded+1c&family=Roboto:wght@300&family=Satisfy&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fa118d1b7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/checkout.css"> 
+    <link rel="stylesheet" href="styles/header.css"> 
+
+</head>
+<body>
+    <div class="loding">
+        <div class="loding-line"></div>
+        <div class="loding-circle"></div>
+    </div>
+
+    <div class="go-top-button">
+        <i class="fa fa-angle-double-up"></i>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="header-first-container">
+                <div class="header-first">
+                    <div class="header-first-left">
+                        <ul class="content-firstLeftHeader">
+                            <li class="first">Welcome to Our store Multikart</li>
+                            <li class="the-second">Call Us: 123 - 456 - 7890</li>
+                        </ul>
+                    </div>
+                    <div class="header-first-right">
+                        <ul class="content-firstRightHeader">
+                            <li class="header-list-item">
+                                <a class="header-top-link compare" href="#"><i class="fa fa-random"></i>Compare</a>
+                            </li>
+                            <li class="header-list-item">
+                                <a class="header-top-link wishlist" href="#"><i class="fa fa-heart"></i>Wishlist</a>
+                            </li> 
+                            <div class="header-drop">
+                                <li class="header-list-item my-account">
+                                    <a class="header-top-link my-account-link" href="#"><i class="fa fa-user"></i>My
+                                        Account</a>
+                                    <ul class="item-hover my-account-hover">
+                                        <li class="login-hover"> <a href="#">Login</a> </li>
+                                        <li class="logout-hover"> <a href="#">Logout</a> </li>
+                                    </ul>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="header-second-container">
+                <div class="header-second-left">
+                    <div class="sidebar-back">
+                        <i class="fa fa-bars sidebar-bar open-sidebar" aria-hidden="true"></i>
+                        <a href="#" class="sidebar-open"></a>
+                        <div class="sidebar-menu">
+                            <div class="back-botton">
+                                <i aria-hidden="true" class="fa fa-angle-left pe-2"></i>
+                                BACK                               
+                            </div>
+                            <ul class="sub-menu">
+                                <li class="sub-menu-hover">
+                                    <a class="sub-menu__link" href="">
+                                        CLOTHING
+                                        <i aria-hidden="true" class="fa fa-angle-right pe-2"></i>
+                                    </a>
+                                    <ul class="sub-menu-list">
+                                        <li>
+                                            <ul class="sidebar-submenu sub-menu-flex">
+                                                <li class="sub-menu-item-clothing">
+                                                    <h5>Mens Fashion</h5>
+                                                    <ul>
+                                                        <li><a href="" class="list-hover__link">Sports Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Top</a></li>
+                                                        <li><a href="" class="list-hover__link">Bottom</a></li>
+                                                        <li><a href="" class="list-hover__link">Ethic Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Sports Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Shirts</a></li>
+                                                        <li><a href="" class="list-hover__link">Bottom</a></li>
+                                                        <li><a href="" class="list-hover__link">Ethic Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Sports Wear</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="sub-menu-item-clothing">
+                                                    <h5>Women Fashion</h5>
+                                                    <ul>
+                                                        <li><a href="" class="list-hover__link">Dresses</a></li>
+                                                        <li><a href="" class="list-hover__link">Skirts</a></li>
+                                                        <li><a href="" class="list-hover__link">Western Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Ethic Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Bottom</a></li>
+                                                        <li><a href="" class="list-hover__link">Ethic Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Sports Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Sports Wear</a></li>
+                                                        <li><a href="" class="list-hover__link">Bottom Wear</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-hover">
+                                    <a class="sub-menu__link" href="">
+                                        BAGS
+                                        <i aria-hidden="true" class="fa fa-angle-right pe-2"></i>
+                                    </a>
+                                    <ul class="sub-menu-list">
+                                        <li>
+                                            <ul class="sidebar-submenu submenu-next">
+                                                <li class="sidebar-submenu-item">
+                                                    <ul>
+                                                        <li><a href="" class="list-hover__link">Shopper Bags</a></li>
+                                                        <li><a href="" class="list-hover__link">Laptop Bags</a></li>
+                                                        <li><a href="" class="list-hover__link">Clutches</a></li>
+                                                        <li class="submenu-hover"><a href="" class="list-hover__link">Purses </a>
+                                                            <ul class="sidebar-submenu sidebar-sub-submenu submenu-next ">
+                                                                <li><a href="" class="list-hover__link">Purses</a></li>
+                                                                <li><a href="" class="list-hover__link">Wallets</a></li>
+                                                                <li><a href="" class="list-hover__link">Leathers</a></li>
+                                                                <li><a href="" class="list-hover__link">Satchels</a></li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="sub-menu-hover">
+                                    <a class="sub-menu__link" href="">
+                                        FOOTWEAR
+                                        <i aria-hidden="true" class="fa fa-angle-right pe-2"></i>
+                                    </a>
+                                    <ul class="sub-menu-list">
+                                        <li>
+                                            <ul class="sidebar-submenu submenu-next">
+                                                <li class="sidebar-submenu-item">
+                                                    <ul>
+                                                        <li><a href="" class="list-hover__link">Sport Shoes</a></li>
+                                                        <li><a href="" class="list-hover__link">Formal Shoes</a></li>
+                                                        <li><a href="" class="list-hover__link">Casual Shoes</a></li>                                           
+                                                    </ul>
+                                                </li>
+                                            </ul>
+    
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">WATCHES</a>
+                                </li>
+                                <li class="sub-menu-hover">
+                                    <a class="sub-menu__link" href="">
+                                        ACCESSORIES
+                                        <i aria-hidden="true" class="fa fa-angle-right pe-2"></i>
+                                    </a>
+                                    <ul class="sub-menu-list">
+                                        <li>
+                                            <ul class="sidebar-submenu submenu-next">
+                                                <li class="sidebar-submenu-item">
+                                                    <ul>
+                                                        <li><a href="" class="list-hover__link">Fashion Jewellery</a></li>
+                                                        <li><a href="" class="list-hover__link">Caps And Hats</a></li>
+                                                        <li><a href="" class="list-hover__link">Precious Jewellery</a></li>
+                                                        <li class="submenu-hover">
+                                                            <a href="" class="list-hover__link">More..</a>
+                                                            <ul class="sidebar-submenu sidebar-sub-submenu submenu-next">
+                                                                <li><a href="" class="list-hover__link">Necklaces </a></li>
+                                                                <li><a href="" class="list-hover__link">Earrings</a></li>
+                                                                <li><a href="" class="list-hover__link">Rings & Wrist Wear</a></li>
+                                                                <li class="submenu-hover sub1-hover">
+                                                                    <a href="" class="list-hover__link">More...</a>
+                                                                    <ul class="sidebar-submenu submenu-next sub1">
+                                                                        <li><a href="" class="list-hover__link">Ties</a></li>
+                                                                        <li><a href="" class="list-hover__link">Cufflinks</a></li>
+                                                                        <li><a href="" class="list-hover__link">Puckets Squares</a></li>
+                                                                        <li><a href="" class="list-hover__link">Helmets</a></li>
+                                                                        <li><a href="" class="list-hover__link">Scarves</a></li>
+                                                                        <li class="sub2-hover">
+                                                                            <a href="" class="list-hover__link">More...</a>
+                                                                            <ul class="sidebar-submenu submenu-next sub2">
+                                                                                <li><a href="" class="list-hover__link">Accessory Gift Sets</a></li>
+                                                                                <li><a href="" class="list-hover__link">Travel Accessories</a></li>
+                                                                                <li><a href="" class="list-hover__link">Phone Cases</a></li>
+                                                                            </ul>
+    
+    
+                                                                        </li>
+    
+                                                                    </ul>
+    
+                                                                </li>
+                                                                
+    
+                                                            </ul>
+    
+    
+                                                        </li>
+    
+    
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">HOUSE OF DESIGN</a>
+                                </li>
+                                <li class="sub-menu-hover">
+                                    <a class="sub-menu__link" href="">
+                                        BEAUTY & PERSONAL CARE
+                                        <i aria-hidden="true" class="fa fa-angle-right pe-2"></i>
+                                    </a>
+                                    <ul class="sub-menu-list">
+                                        <li>
+                                            <ul class="sidebar-submenu submenu-next">
+                                                <li class="sidebar-submenu-item">
+                                                    <ul>
+                                                        <li><a href="" class="list-hover__link">Makeup</a></li>
+                                                        <li><a href="" class="list-hover__link">Skincare</a></li>
+                                                        <li><a href="" class="list-hover__link">Premium Beaty</a></li>
+                                                        <li class="submenu-hover">
+                                                            <a href="" class="sub-menu__link">More...</a>
+                                                            <ul class="sidebar-submenu sidebar-sub-submenu submenu-next">
+                                                                <li><a href="" class="list-hover__link">Fragrances</a></li>
+                                                                <li><a href="" class="list-hover__link">Luxury Beauty</a></li>
+                                                                <li><a href="" class="list-hover__link">Hair Care</a></li>
+                                                                <li><a href="" class="list-hover__link">Tools & Brushes</a></li>
+                                                            </ul>
+                                                        </li>
+    
+                                                    </ul>
+    
+                                                </li>
+    
+                                            </ul>
+                                        </li>
+    
+                                    </ul>
+    
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">HOME & DECOR</a>
+                                </li>
+                                <li>
+                                    <a href="" class="sub-menu__link">KITCHEN</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sidebar-logo">
+                        <a href="#"><img src="images/logo-14.png" alt="logo"></a>
+                    </div>
+                </div>
+                <div class="header-second-right">
+                    <div class="header-second-right__navmenu">
+                        <ul class="navMenu">
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#">HOME
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="header-second-dropDown submenu">
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Clothing
+                                            <span class="angle-right"><i class="fa fa-angle-right"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="submenu sub-submenu">
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Fashion 01</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Fashion 02</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Fashion 03</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Vegetable</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">watch</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Furniture</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Flower</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Beauty</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Electronics</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Pets</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Gym</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Tools</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Shoes</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Bags</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Marijuana</a>
+                                    </li>
+                                </ul> 
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#">SHOP
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="header-second-dropDown submenu">
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Left Sidebar</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Right Sidebar</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">No Sidebar</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Infinite Scroll</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#">PRODUCTS
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="header-second-dropDown submenu">
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Sidebar
+                                            <span class="angle-right"><i class="fa fa-angle-right"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="submenu sub-submenu">
+                                            <li class="list-item-hover">
+                                                <a href="#" class="list-hover__link">Left Sidebar</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="#" class="list-hover__link">Right Sidebar</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="#" class="list-hover__link">No Sidebar</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Three Olumn</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Four Image</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Bundle Product</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Image Outside</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar-item features">
+                                <span class="new">new</span>
+                                <a class="navbar-item__link feature-link" href="#">FEATURES
+                                    <span class="arrow"></span>
+                                </a>
+                                <div class="feature-menu-container">
+                                    <div class="feature-menu-box">
+                                        <div class="feature-menu-section">
+                                            <ul class="header-second-dropDown submenu" id="portfolio-items">
+                                                <h5 class="submenu-title">Portfolio</h5>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Portfolio Grid 2</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Portfolio Grid 3</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Portfolio Grid 4</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Masonry-Grid-2</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Masonry-Grid-3</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Masonry-Grid-4</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Masonry-Full-Width</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="feature-menu-section">
+                                            <ul class="header-second-dropDown submenu" id="portfolio-items">
+                                                <h5 class="submenu-title">Add To Cart</h5>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Cart Right</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Cart Left</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Cart Top</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Cart Bottom</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Cart-Model-Popup</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="feature-menu-section">
+                                            <ul class="header-second-dropDown submenu" id="portfolio-items">
+                                                <h5 class="submenu-title">Theme Elements</h5>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Title</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Collection Banner</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Home Slider</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Category</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Services</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="feature-menu-section">
+                                            <ul class="header-second-dropDown submenu" id="portfolio-items">
+                                                <h5 class="submenu-title">Product Elements</h5>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Product Slider</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Banners</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Product Tabs</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Multi Slider</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="feature-menu-section">
+                                            <ul class="header-second-dropDown submenu" id="portfolio-items">
+                                                <h5 class="submenu-title">Email Template</h5>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Order Success</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Order Success 2</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Email Template</a>
+                                                </li>
+                                                <li class="list-item-hover submenu-item-hover">
+                                                    <a href="#" class="list-hover__link">Email Template 2</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#">PAGES
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="header-second-dropDown submenu">
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Account
+                                            <span class="angle-right"><i class="fa fa-angle-right"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+
+                                        <ul class="submenu sub-submenu">
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Wishlist</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Cart</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Dashboard</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Login</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Register</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Contact</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Forget Password</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Profile</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="" class="list-hover__link">Checkout</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">About us</a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Search</a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Typography
+                                            <span class="new-elem">New</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Review
+                                            <span class="new-elem">New</span>
+                                        </a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Order Success</a>
+                                    </li>
+                                    <li class="list-item-hover submenu-item-hover">
+                                        <a href="#" class="list-hover__link">Compare
+                                            <span class="angle-right"><i class="fa fa-angle-right"
+                                                    aria-hidden="true"></i>
+                                            </span>
+                                        </a>
+                                        <ul class="submenu sub-submenu">
+                                            <li class="list-item-hover">
+                                                <a href="#" class="list-hover__link">Compare 1</a>
+                                            </li>
+                                            <li class="list-item-hover">
+                                                <a href="#" class="list-hover__link">Compare 2
+                                                    <span class="new-elem">New</span>
+                                                </a>
+                                            </li>   
+                                        </ul>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Collection</a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Lookbook</a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">404</a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Coming Soon
+                                            <span class="new-elem">New</span>
+                                        </a>
+                                    </li> 
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Faq</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="navbar-item">
+                                <a class="navbar-item__link" href="#">BLOGS
+                                    <span class="arrow"></span>
+                                </a>
+                                <ul class="header-second-dropDown submenu">
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Left Sidebar</a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Right Sidebar</a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">No Sidebar</a>
+                                    </li>
+                                    <li class="list-item-hover">
+                                        <a href="#" class="list-hover__link">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-second-right-icons">
+                        <ul class="icons-list">
+                            <li class="icon-item">
+                                <img class="icon-image" src="https://angular.pixelstrap.com/multikart/assets/images/icon/search.png" alt="search">
+                            </li>
+                            <li class="icon-item header-drop">
+                                <img class="icon-imge" src="https://angular.pixelstrap.com/multikart/assets/images/icon/setting.png" alt="setting">
+                                <div class="item-hover setting">
+                                    <h6 class="bold">Language</h6>
+                                    <ul class="language-list">
+                                        <li class="language-item"><a class="language-link" href="#">English</a></li>
+                                        <li class="language-item"><a class="language-link" href="#">French</a></li>
+                                    </ul>
+                                    <h6 class="bold">currency</h6>
+                                    <ul class="currency-list">
+                                        <li class="currency-item"><a class="currency-link" href="#">Euro</a></li>
+                                        <li class="currency-item"><a class="currency-link" href="#">Rupees</a></li>
+                                        <li class="currency-item"><a class="currency-link" href="#">Pound</a></li>
+                                        <li class="currency-item"><a class="currency-link" href="#">Dollar</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="icon-item header-drop">
+                                <span class="zero">0</span>
+                                <img class="icon-image" src="https://angular.pixelstrap.com/multikart/assets/images/icon/cart.png" alt="shopping">
+                                <ul class="item-hover setting">
+                                    <h5 class="shop-message">Your cart is currently empty.</h5>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+         
+        <section class="title">
+            <div class="title-box">
+                <div class="title-page">
+                    <h2 class="title-h2">checkout</h2>
+                </div>
+                <div class="home-title"><a href="">home</a> <span>/</span> checkout</div>
+            </div>
+        </section>
+
+        <section class="billing-details">
+            <div class="billing-container">
+                <form action="">
+                    <div class="billing-box">
+                        <div class="billing-box-col-first">
+                            <div class="ceckout-title">
+                                <h3>Billing Details</h3>
+                            </div>
+                            <div class="information">
+                                <div class="information-box">
+                                    <span class="input-lable">First Name</span>
+                                    <input type="text" name="firstname" class="user-input firstname-input">
+                                    <div class="warning-text firstname">First Name is required.</div>
+                                </div>
+                                <div class="information-box">
+                                    <span class="input-lable">Last Name</span>
+                                    <input type="text" name="lastname" class="user-input lastname-input">
+                                    <div class="warning-text lastname">Last Name is required.</div>
+                                </div>
+                                <div class="information-box">
+                                    <span class="input-lable">Phone</span>
+                                    <input type="text" name="phone" class="user-input phone-input">
+                                    <div class="warning-text phone">Phone No is required.</div>
+                                </div>
+                                <div class="information-box">
+                                    <span class="input-lable">Email Address</span>
+                                    <input type="email" name="emailaddress" class="user-input emailaddress-input">
+                                    <div class="warning-text emailaddress">Email is required</div>
+                                </div>
+                                <div class="information-selector larger-box">
+                                    <div class="select-lable">Country</div>
+                                    <select name="country" class="user-country">
+                                        <option value="Select Country">Select Country</option>
+                                        <option value="India">India</option>
+                                        <option value="USA">USA</option>
+                                        <option value="Australia">Australia</option>
+                                    </select>
+                                    <div class="warning-text country">Country is required</div>
+                                </div>
+                                <div class="information-box larger-box">
+                                    <span class="input-lable">Address</span>
+                                    <input type="text" name="address" class="user-input address-input">
+                                    <div class="warning-text address">Address is required</div>
+                                </div>
+                                <div class="information-box larger-box">
+                                    <span class="input-lable">Town/City</span>
+                                    <input type="text" name="town-city" class="user-input city-input">
+                                    <div class="warning-text town-city">City is required</div>
+                                </div>
+                                <div class="information-box larger-box">
+                                    <span class="input-lable">State</span>
+                                    <input type="text" name="state" class="user-input state-input">
+                                    <div class="warning-text state">State is required</div>
+                                </div>
+                                <div class="information-box larger-box">
+                                    <span class="input-lable">Postal Code</span>
+                                    <input type="text" name="postalCode" class="user-input code-input">
+                                    <div class="warning-text postalCode">Postalcode is required</div>
+                                </div>
+                            </div>
+
+                            <div class="stripejs">
+                                <div class="stripejs-container">
+                                    <h5>stripe js</h5>
+                                    <div class="stripejs-content">
+                                        <h5>dummy test</h5>
+                                        <table class="stripejs-table">
+                                            <tr>
+                                                <td>cart number</td>
+                                                <td>4242424242424242</td>
+                                            </tr>
+                                            <tr>
+                                                <td>mm/yy</td>
+                                                <td>2/2020</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cvc</td>
+                                                <td>2222</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="paypal">
+                                <div class="paypal-container">
+                                    <h5>paypal</h5>
+                                    <div class="paypal-content">
+                                        <h5>dummy test</h5>
+                                        <table class="paypal-table">
+                                            <tr>
+                                                <td>cart number</td>
+                                                <td>4152521541244</td>
+                                            </tr>
+                                            <tr>
+                                                <td>mm/yy</td>
+                                                <td>11/18</td>
+                                            </tr>
+                                            <tr>
+                                                <td>cvc</td>
+                                                <td>521</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="biiling-box-col-second"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-one">
+                    <div class="footer-one-left">
+                        <h4 class="footer_top_title">KNOW IT ALL FIRST!</h4>
+                        <p class="footer_top_text">Never Miss Anything From Multikart By Signing Up To Our Newsletter.
+                        </p>
+                    </div>
+                    <div class="footer-one-right">
+                        <form action="">
+                            <input class="inputFooter" type="email" name="EMAIL" placeholder="Enter your email">
+                            <button class="buttonFooter" type="submit">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-second">
+                    <div class="footer-second-left">
+                        <div class="footer-logo">
+                            <img src="images/logo-14.png" alt="logo">
+                        </div>
+                        <p class="footer-second-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <div class="footer-second-icons">
+                            <ul class="footer-second-icons__list">
+                                <li class="footer-second-icons__item"><a href="#"><i aria-hidden="true"
+                                    class="footer-second-i fa fa-facebook"></i></a></li>
+                                <li class="footer-second-icons__item"><a href="#"><i aria-hidden="true"
+                                    class="footer-second-i fa fa-google-plus"></i></a></li>
+                                <li class="footer-second-icons__item"><a href="#"><i aria-hidden="true"
+                                    class="footer-second-i fa fa-twitter"></i></a></li>
+                                <li class="footer-second-icons__item"><a href="#"><i aria-hidden="true"
+                                    class="footer-second-i fa fa-instagram"></i></a></li>
+                                <li class="footer-second-icons__item"><a href="#"><i aria-hidden="true"
+                                    class="footer-second-i fa fa-rss"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-second-center footer-margin">
+                        <div class="footer-second-center__title">
+                            <h4 class="footer-second-center_h4">CATEGORIES</h4>
+                        </div>
+                        <div class="footer-second-center__contents">
+                            <ul>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">Womens Fashion</a>
+                                </li>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">Mens Fashion</a>
+                                </li>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">Kids Fashion</a>
+                                </li>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">Featured</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-second-center">
+                        <div class="footer-second-center__title">
+                            <h4 class="footer-second-center_h4">WHY WE CHOOSE</h4>
+                        </div>
+                        <div class="footer-second-center__contents">
+                            <ul>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">Shipping & Return</a>
+                                </li>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">Secure Shopping</a>
+                                </li>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">Gallary</a>
+                                </li>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">Affiliates</a>
+                                </li>
+                                <li class="footer-second-center__item list-hover-item">
+                                    <a href="#" class="footer-second-center__link hover-link">contacts</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-second-center">
+                        <div class="footer-second-center__title">
+                            <h4 class="footer-second-center_h4">STORE INFORMATION</h4>
+                        </div>
+                        <div class="footer-second-center__contents">
+                            <ul>
+                                <li class="footer-second-center__item footer-second-item__left"><i
+                                        class="footer-second-center__i fa fa-map-marker"></i>Multikart Demo Store, Demo
+                                    Store India 345-659</li>
+                                <li class="footer-second-center__item footer-second-item__left"><i
+                                        class="footer-second-center__i fa fa-phone"></i>Call Us: 123-456-7898</li>
+                                <li class="footer-second-center__item footer-second-item__left"><i
+                                        class="footer-second-center__i fa fa-envelope-o"></i>Email Us:
+                                    Support@Fiot.Com</li>
+                                <li class="footer-second-center__item footer-second-item__left"><i
+                                        class="footer-second-center__i fa fa-fax"></i>Fax: 123456</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="sub-footer">
+                <div class="sub-footer-container">
+                    <div class="sub-footer-left">
+                        <p class="sub-footer-text">
+                            <i class="fa fa-copyright"></i>
+                            2023 theme forest powered by pixelstrap
+                        </p>
+                    </div>
+                    <div class="sub-footer-right">
+                        <ul class="sub-footer-list-icons">
+                            <li>
+                                <img class="sub-footer-icon" src="images/visa.png" alt="visa">
+                            </li>
+                            <li>
+                                <img class="sub-footer-icon" src="images/mastercard.png" alt="mastercard">
+                            </li>
+                            <li>
+                                <img class="sub-footer-icon" src="images/paypal.png" alt="paypal">
+                            </li>
+                            <li>
+                                <img class="sub-footer-icon" src="images/american-express.png" alt="american-expres">
+                            </li>
+                            <li>
+                                <img class="sub-footer-icon" src="images/discover.png" alt="discover">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <section class="right-buttons">
+            <div class="setting-button">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                    class="w-5 h-5 setting-icon">
+                    <path fill-rule="evenodd"
+                        d="M8.34 1.804A1 1 0 019.32 1h1.36a1 1 0 01.98.804l.295 1.473c.497.144.971.342 1.416.587l1.25-.834a1 1 0 011.262.125l.962.962a1 1 0 01.125 1.262l-.834 1.25c.245.445.443.919.587 1.416l1.473.294a1 1 0 01.804.98v1.361a1 1 0 01-.804.98l-1.473.295a6.95 6.95 0 01-.587 1.416l.834 1.25a1 1 0 01-.125 1.262l-.962.962a1 1 0 01-1.262.125l-1.25-.834a6.953 6.953 0 01-1.416.587l-.294 1.473a1 1 0 01-.98.804H9.32a1 1 0 01-.98-.804l-.295-1.473a6.957 6.957 0 01-1.416-.587l-1.25.834a1 1 0 01-1.262-.125l-.962-.962a1 1 0 01-.125-1.262l.834-1.25a6.957 6.957 0 01-.587-1.416l-1.473-.294A1 1 0 011 10.68V9.32a1 1 0 01.804-.98l1.473-.295c.144-.497.342-.971.587-1.416l-.834-1.25a1 1 0 01.125-1.262l.962-.962A1 1 0 015.38 3.03l1.25.834a6.957 6.957 0 011.416-.587l.294-1.473zM13 10a3 3 0 11-6 0 3 3 0 016 0z"
+                        clip-rule="evenodd" />
+                </svg>
+            </div>
+            <div class="dark-button">
+                <p>Dark</p>
+            </div>
+        </section>
+    </div>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/checkout.js"></script>
+</body>
+</html>
