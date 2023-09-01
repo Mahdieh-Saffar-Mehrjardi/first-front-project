@@ -1,4 +1,15 @@
 let $ = document
+// stick header
+let stickyHeader = document.querySelector('.header-second-container')
+
+document.addEventListener('scroll',function(){
+    if (document.documentElement.scrollTop > 200) {
+        stickyHeader.classList.add('sticky')
+    } else {
+        stickyHeader.classList.remove('sticky')
+    }
+})
+
 // category js
 let categoryTitle = $.querySelector('.category-title')
 let categoryList = $.querySelector('.category-list')

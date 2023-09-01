@@ -97,11 +97,11 @@ ul{
     display: flex;
 }
 
-.first,.second{
+.first,.the-second{
     padding-right: 25px;
 }
 
-.second::before{
+.the-second::before{
     content: "\f095";
     font: var(--fa-font-solid);
     padding-right: 10px;
