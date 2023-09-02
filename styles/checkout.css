@@ -193,3 +193,223 @@
 .paypal{
     margin-top: 25px;
 }
+
+/* col second css */
+
+.billing-box-col-second{
+    padding-left: 12px;
+    width: 50%;
+}
+
+.col-second-container{
+    position: relative;
+    background-color: #f9f9f9;
+    border: 1px solid #dddddd;
+    padding: 40px;
+}
+
+.order-title,
+.product-detail{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+}
+
+.odrer-title h2 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 33px;
+    color: #444444;
+}
+
+.last-child{
+    width: 35%;
+}
+
+.product-name{
+    font-size: 15px;
+    line-height: 20px;
+    color: #444444;
+}
+
+.product-price{
+    font-size: 18px;
+    color: #232323;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.subTotal-container{
+    text-transform: capitalize;
+    border-bottom: 1px solid #ededed;
+    margin-bottom: 30px;
+}
+
+.subtotal,
+.shipping{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.total-title{
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 16px;
+    color: #333333;
+}
+
+.total-price{
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--theme-default) !important;
+}
+
+.shoping-option{
+    width: 36.6%;
+}
+
+.shoping-option div{
+    display: block;
+    padding-left: 10px;
+    margin-bottom: 8px;
+    color: #6f6f6f;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.shoping-option div label,
+.payment-radio div label{
+    padding-left: 10px;
+    cursor: pointer;
+
+}
+
+.total-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+}
+
+.total {
+    color: #333333;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.payment-radio div {
+    margin-bottom: 15px;
+    color: #6f6f6f;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.paypal-box{
+    cursor: pointer;
+}
+.payment-img{
+    margin-top: 5px;
+}
+
+.payment-btn-box{
+    text-align: right;
+}
+
+.hide-button{
+    display: none;
+}
+
+.payment-btn{
+    padding: 13px 29px;
+    background-image: linear-gradient(30deg, var(--theme-default) 50%, transparent 50%);
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    transition: background 300ms ease-in-out;
+    color: #ffffff;
+    letter-spacing: 0.7px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-family: 'Lato', sans-serif;
+    border: 2px solid var(--theme-default);
+    cursor: pointer;
+}
+
+.able:hover {
+    background-position: 100%;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.disable{
+    opacity: 0.6;
+    cursor: auto;
+}
+
+/* dark mode css */
+
+body.dark{
+    background-color: #2b2b2b;
+    transition: all 0.3s ease;
+    color: #cfd4da;
+}
+
+.dark .title{
+    background-color: #232323;
+    transition: all 0.3s ease;
+}
+.dark h2 ,
+.dark a{
+    color: #cfd4da;
+}
+
+.dark .home-title,
+.dark .ceckout-title h3,
+.dark .information-box span,
+.dark .select-lable{
+    color: #cfd4da;
+}
+
+.dark .information-box input{
+    background-color: #2b2b2b;
+    transition: all 0.3s ease;
+    border-color: #404040;
+}
+
+.dark .user-country{
+    border-color: #404040;
+    background-color: #2b2b2b;
+    color: #cfd4da;
+}
+
+.dark .stripejs-container,
+.dark .paypal-container{
+    background-color: #232323;
+    border-color: #404040;
+}
+
+.dark .stripejs-table td,
+.dark .paypal-table td{
+    border-color: #404040;
+}
+
+.dark .stripejs-container h5,
+.dark .paypal-container h5{
+    color: #dee2e6;
+}
+
+.dark .col-second-container{
+    background-color: #232323;
+    transition: all 0.3s ease;
+    border: 1px solid #404040;
+}
+
+.dark .odrer-title h2 {
+    color: #cfd4da;
+}
