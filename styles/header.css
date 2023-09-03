@@ -1001,3 +1001,230 @@ ul{
 .dark .footer-second-item__left{
     color: #cfd4da;
 }
+
+/* setting box design */
+
+.setting-box{
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    width: 350px;
+    right: -360px;
+    background-color: white;
+    top: 0;
+    z-index: 999;
+    box-shadow: 0 15px 5px 0 rgba(77, 77, 77, 0.28);
+    transition: all 0.5s ease;
+}
+
+.setting-box.opensetting{
+    transition: all 0.5s ease; 
+    right: 0px;
+}
+
+.opensetting .close-setting-box{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    transition: all 1s;
+}
+
+.setting-box-body{
+    position: relative;
+    background-color: white;
+    z-index: 999;
+    height: 100vh;
+}
+
+.setting-back{
+    padding: 20px;
+    font-size: 18px;
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 6px rgba(115, 115, 115, 0.09);
+    background-color: #f3f3f3;
+}
+
+.setting-back i {
+    font-size: 13px;
+}
+
+.pe-2 {
+    padding-right: 0.5rem !important;
+}
+
+.fa-angle-left:before {
+    content: "\f104";
+}
+
+.setting-contant::-webkit-scrollbar{
+    width: 3px;
+    height: 7px;
+}
+
+.setting-contant::-webkit-scrollbar-thumb{
+    background: #888888;
+}
+
+.setting-contant::-webkit-scrollbar-thumb:hover{
+    background: #555555;
+}
+
+.setting-contant::-webkit-scrollbar-track{
+    background: #dddddd;
+}
+
+.setting-box-title {
+    border-bottom: 1px solid #efefef;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.setting-box-title h4 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.54px;
+    line-height: 1;
+}
+
+.setting-box-title i {
+    font-size: 14px;
+}
+
+.setting-contant{
+    padding: 0px;
+    border-bottom: 1px solid #efefef;
+    max-height: 0;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.setting-contant.open{
+    padding: 20px;
+    overflow-y: scroll;
+    max-height: 500px;
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.setting-item {
+    width: 50%;
+    margin-bottom: 30px;
+    padding-right: 24px;
+}
+
+.setting-contant:nth-child(odd){
+    padding-right: 0px;
+}
+
+.setting-image {
+    width: 100%;
+    height: 110px;
+    transition: all 2s ease-out 0s;
+    box-shadow: -1px 2px 5px 1px #ececec;
+}
+
+.setting-item div h4{
+    text-transform: capitalize;
+    color: #000000;
+    margin-top: 10px;
+    font-weight: 400;
+    letter-spacing: 0.48;
+    line-height: 1;
+}
+
+.setting-box-btn {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting-box-btn a {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    width: 90px;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--theme-deafult);
+    transition: 0.3s ease-in-out;
+    line-height: 20px;
+}
+
+.setting-box-btn:hover a {
+    color: #ffffff;
+    background-color: var(--theme-deafult);
+}
+
+.color-picker input{
+    width: 34px;
+    height: 38px;
+    margin-right: 5px;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.color-picker span{
+    padding-top: 9px;
+    text-transform: capitalize;
+}
+
+.rtl div{
+    width: 49%;
+    padding-right: 12px;
+}
+
+.rtl div a{
+    background-color: var(--theme-deafult);
+    width: 100%;
+    color: #ffffff;
+    display: block;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 6px 12px;
+    text-align: center;
+}
+
+.setting-box-bottom{
+    padding: 20px;
+}
+
+.setting-box-bottom a{
+    padding: 10px;
+    display: block;
+    color: #3c3c3c;
+    background-color: #f3f3f3;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 20px;
+}
+
+.setting-box-bottom a i {
+    margin-right: 5px;
+}
+
+.setting-box-bottom a img{
+    filter: grayscale(100%);
+    vertical-align: middle;
+}

@@ -65,3 +65,104 @@ let darkbtn = document.querySelector('.dark-button')
 darkbtn.addEventListener('click', () => {
     document.body.classList.toggle('dark')
 })
+
+// setting box js
+
+let layoutSection = document.querySelector('.layout')
+
+let layoutList = ['fashion', 'fashion2', 'fashion2', 'vegetable'
+    , 'watch', 'Furniture', 'Flower', 'Beauty', 'Electronics',
+    'Pets', 'gym', 'tools', 'Shoes', 'bags', 'Marijuana'
+]
+
+layoutList.forEach(item => {
+    layoutSection.insertAdjacentHTML('beforeend',`
+    <div class="setting-item">
+        <div class="setting-image"></div>
+        <div>
+            <h4>${item}</h4>
+            <div class="setting-box-btn">
+                <a href="">Preview</a>
+            </div>
+        </div>
+    </div> 
+    `)
+})
+
+let shopSection = document.querySelector('.shop')
+
+let shopList = ['Left Sidebar', 'Right Sidebar', 'No Sidebar']
+
+shopList.forEach(item => {
+    shopSection.insertAdjacentHTML('beforeend',`
+    <div class="setting-item">
+        <div class="setting-image"></div>
+        <div>
+            <h4>${item}</h4>
+            <div class="setting-box-btn">
+                <a href="">Preview</a>
+            </div>
+        </div>
+    </div>
+    `)
+})
+
+let productSection = document.querySelector('.product')
+
+let productListSetting = ['Left Sidebar', 'Right Sidebar', 'No Sidebar',
+    'Three Column', 'Four Image', 'Bundle Product', 'Image Outside'
+]
+
+productListSetting.forEach(item => {
+    productSection.insertAdjacentHTML('beforeend',`
+    <div class="setting-item">
+        <div class="setting-image"></div>
+        <div>
+            <h4>${item}</h4>
+            <div class="setting-box-btn">
+                <a href="">Preview</a>
+            </div>
+        </div>
+    </div>
+    `)
+})
+
+let settingBoxTitle = document.querySelectorAll('.setting-box-title')
+let colorPicker = document.querySelector('.color-picker')
+let rtlElem = document.querySelector('.rtl')
+
+settingBoxTitle[0].addEventListener('click', () => {
+    layoutSection.classList.toggle('open')
+})
+settingBoxTitle[1].addEventListener('click', () => {
+    shopSection.classList.toggle('open')
+})
+settingBoxTitle[2].addEventListener('click', () => {
+    productSection.classList.toggle('open')
+})
+settingBoxTitle[3].addEventListener('click', () => {
+    colorPicker.classList.toggle('open')
+})
+settingBoxTitle[4].addEventListener('click', () => {
+    rtlElem.classList.toggle('open')
+})
+
+// open and close setting section
+
+let settingBackBtn = document.querySelector('.setting-back')
+let settingBox = document.querySelector('.setting-box')
+let settingBtn = document.querySelector('.setting-button')
+let closeSettingBox = document.querySelector('.close-setting-box')
+
+
+settingBackBtn.addEventListener('click',()=>{
+    settingBox.classList.remove('opensetting')
+})
+
+settingBtn.addEventListener('click',() => {
+    settingBox.classList.add('opensetting')
+})
+
+closeSettingBox.addEventListener('click' , () => {
+    settingBox.classList.remove('opensetting')
+})
