@@ -1,0 +1,260 @@
+:root{
+    --theme-default : #ff4c3b;
+}
+
+/* slider design */
+.slider {
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    padding: 35px 70px 35px 70px;
+    position: relative;
+}
+
+.slider-first{
+    background-image: url(../images/9.jpg);
+}
+
+.slider-second{
+    background-image: url(../images/10.jpg);
+}
+
+.slider-effect {
+    animation-name: slider_effect;
+    animation-duration: 1.5s;
+}
+
+@keyframes slider-effect {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: 100px;
+    }
+}
+
+.slider-contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-title,
+.slider-subtitle,
+.shop-button{
+    text-align: center;
+    font-weight: 700;
+}
+
+.slider-subtitle{
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 0.4em;
+    color: #777777;
+    margin-bottom: 0;
+    margin-top: -3px;
+}
+
+.slider-title{
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 10px;
+    color: #222222;
+    text-transform: uppercase;
+    font-size: 60px;
+    letter-spacing: 1.5px;
+}
+
+.shop-button{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    background-image: linear-gradient(30deg, var(--theme-default) 50%,
+            transparent 50%) !important;
+    border: 2px solid var(--main-color);
+    padding: 13px 29px;
+    background-size: 850px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    transition: all 300ms ease-in-out;
+    margin-top: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 20px;
+    letter-spacing: 0.7px;
+    font-family: 'Lato'
+}
+
+.shop-button:hover{
+    color: #222222;
+    background-color: #fff;
+    background-position: 100%;
+}
+
+.arrow-left,
+.arrow-right {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-top: -10px;
+    opacity: 0;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    padding: 4px 7px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.arrow-right {
+    right: 1px;
+}
+
+.arrow-left {
+    left: 1px;
+}
+
+.arrow-left i,
+.arrow-right i {
+    color: #212529;
+    font-size: 8px;
+}
+
+.slider:hover .arrow-left {
+    left: 100px;
+}
+
+.slider:hover .arrow-right {
+    right: 100px;
+}
+
+.slider:hover .arrow-left,
+.slider:hover .arrow-right {
+    opacity: 1;
+    transform: scale(2.5);
+    transition: all 0.5s ease;
+}
+
+/* brand design */
+.brands {
+    display: flex;
+    padding: 0 15px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.brand-image {
+    margin: 0 auto;
+    padding-top: 70px;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+.brand-image:hover {
+    filter: grayscale(0);
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+/* offer design  */
+
+.offer{
+    max-width: 1400px;
+    padding: 0 12px;
+    margin: 0 60px;
+    padding-top: 70px;
+}
+
+.offer-box{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(../images/offer-banner-2.jpg);
+    background-size: cover;
+    height: 126px;
+}
+
+.offer-container {
+    flex: 0 0 auto;
+    width: 50%;
+}
+
+.offer-title-container{
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.offer-title{
+    font-size: 36px;
+    color: #222222;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    margin-bottom: 0;
+    text-align: center;
+    display: block;
+}
+
+.offer-pecent{
+    color: var(--theme-default);
+}
+
+.time-box{
+    width: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.time-box-container{
+    justify-content: center;
+    display: flex;
+}
+
+.timer{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 40px;
+    margin-top: 30px;
+    background-color: #2d2a25;
+    display: inline-block;
+}
+
+.timer p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 0;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    margin-top: 0;
+}
+
+.timer span {
+    width: 70px;
+    display: inline-block;
+}
+
+.timer span .padding-l {
+    padding-left: 22px;
+    display: inline;
+}
+
+.timer span .timer-cal {
+    font-size: 12px;
+    color: #777777;
+}
+
