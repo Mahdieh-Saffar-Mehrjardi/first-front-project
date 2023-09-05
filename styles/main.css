@@ -807,3 +807,156 @@
     text-transform: uppercase;
     line-height: 1;
 }
+
+/* collection banner design */
+
+.collection-banner{
+    padding-top: 70px;
+}
+
+.collection-container{
+    max-width: 1400px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 12px;
+    padding-right: 12px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.collection-item{
+    width: 33.33333333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.collection-box{
+    position: relative;
+    overflow: hidden;
+}
+
+.banner-image{
+    transition: all 0.5s ease;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.collection-box:hover .banner-image{
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.collection-flex{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.collection-h4{
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0;
+    margin-top: -3px;
+    line-height: 1;
+    font-size: 18px;
+}
+
+.collection-h2{
+    font-size: 36px;
+    letter-spacing: 0.05em;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+/* special products design */
+
+.special-products{
+    padding-top: 70px;
+    margin: 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+
+.special-products-container{
+    display: flex;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.side-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.special-item{
+    display: flex;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.special-image{
+    height: 300px;
+    transform: scale(1);
+    transition: all 0.5s ease;
+    padding: 15px 15px 15px 0;
+}
+
+.special-item:hover .special-image{
+    transform: scale(1.03);
+    transition: all 0.5s ease;
+}
+
+.special-detail{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.border-item2{
+    border-top: 1px solid #f1f5f4;
+}
+
+.side-box,
+.special-box-ceneter{
+    width: 33%;
+}
+
+.special-box-ceneter{
+    border-left: 1px solid #f1f5f4;
+    border-right: 1px solid #f1f5f4;
+}
+
+.special-img-box{
+    position: relative;
+}
+
+.special-product-box{
+    width: 441px;
+}
+
+.special-img{
+    width: 100%;
+    padding: 15px;
+}
+
+.special-detail-part2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
