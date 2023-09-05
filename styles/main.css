@@ -688,7 +688,7 @@
     margin-bottom: 140px;
 }
 
-.trendingcontainer-second {
+.trending-container-second {
     text-align: center;
     width: 344px;
     display: flex;
@@ -959,4 +959,146 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* recent story design */
+
+.recent-story {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f1f5f4;
+}
+
+.recent-story-container{
+    max-width: 1400px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 0 auto;
+}
+
+.recent-story-box {
+    display: flex;
+}
+
+.recent-detail {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 458.667px;
+}
+
+.recent-img {
+    width: 100%;
+    height: auto;
+}
+
+.recent-info {
+    text-align: center;
+
+}
+
+.recent-h4,
+.recent-text {
+    font-size: 18px;
+    letter-spacing: 0.54px;
+}
+
+.recent-h4 {
+    line-height: 1;
+    font-weight: 400;
+    color: var(--theme-default);
+    margin-top: 25px;
+}
+
+.recent-text {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    line-height: 1.5;
+    margin-top: 10px;
+    transition: all 0.5s ease;
+}
+
+.recent-text:hover {
+    color: var(--theme-default);
+    transition: all 0.5s ease;
+}
+
+.recent-line {
+    width: 75px;
+    height: 3px;
+    background-color: var(--theme-default);
+    margin: 0 auto;
+    margin-top: 13px;
+    margin-bottom: 16px;
+}
+
+.recent-author {
+    color: #777777;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    line-height: 14px;
+}
+
+.recent-img-box {
+    position: relative;
+    overflow: hidden;
+}
+
+.recent-effect {
+    height: inherit;
+}
+
+.recent-img-box::before,
+.recent-img-box::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    top: 0;
+    width: 25%;
+    opacity: 0;
+    transition: all 0.3s steps(4);
+    z-index: 1;
+    background-color: var(--theme-default);
+}
+
+.recent-img-box span::after,
+.recent-img-box span::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    top: 0;
+    width: 25%;
+    opacity: 0;
+    transition: all 0.3s steps(4);
+    z-index: 1;
+    background-color: var(--theme-default);
+}
+
+.recent-img-box::before {
+    transition-delay: 0s;
+    left: 0;
+}
+
+.recent-img-box::after {
+    left: 25%;
+    transition-delay: 0.025s;
+}
+
+.recent-img-box span::before {
+    left: 50%;
+    transition-delay: 0.05s;
+}
+
+.recent-img-box span::after {
+    left: 75%;
+    transition-delay: 0.15s;
+}
+
+.recent-img-box:hover:before,
+.recent-img-box:hover::after,
+.recent-img-box:hover .recent-effect::after,
+.recent-img-box:hover .recent-effect::before {
+    bottom: 0;
+    opacity: 0.5;
 }

@@ -182,3 +182,84 @@ trendingListSelector.forEach(selector => {
     })
 })
 
+// trending product second
+
+let trendingContainerSecond = $.querySelector('.trending-container-second')
+
+let trendingArray2 = [
+    { id: 1, src: 'images/trending1.jpg', name: 'Watch 1', discountedPrice: '$156.00', price: '$260.00', colors: 'silver', onsale: false },
+    { id: 2, src: 'images/trending2.jpg', name: 'Watch 2', discountedPrice: '$207.00', price: '$345.00', colors: 'silver sienna', onsale: false },
+    { id: 3, src: 'images/trending3.jpg', name: 'Watch 3', discountedPrice: '$356.00', price: '$445.00', colors: 'navy', onsale: true },
+    { id: 4, src: 'images/trending4.jpg', name: 'Watch 4', discountedPrice: '$466.40', price: '$530.00', colors: 'bisque', onsale: true },
+]
+
+trendingArray2.forEach(product => {
+
+    trendingContainerSecond.insertAdjacentHTML('beforeend',
+        `<div class="trending-product-second">
+        <div class="trending-product-box">
+            <div class="trending-img-box-second">
+                <span class="trending-new">
+                    new
+                </span>
+                <a href="detail.html?id=${product.id}">
+                    <img class="trending-img" src="${product.src}" alt="">
+                </a>
+                <div class="trending-icons-second">
+                    <a title="Add to cart" class="trending-icons-link" href="#">
+                        <i class="fa fa-shopping-cart fa-flip-horizontal shopping shopping_cart"></i>
+                    </a>
+
+                    <a title="Add to Wishlist" class="trending-icons-link" href="#">
+                        <i class="fa fa-heart shopping heart"></i>
+                    </a>
+
+                    <a title="Quick View" class="trending-icons-link" href="#">
+                        <i class="fa-solid fa-magnifying-glass shopping magnifying"></i>
+                    </a>
+
+                    <a title="Compare" class="trending-icons-link" href="#">
+                        <i class="fa fa-refresh shopping refresh"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="trending-detail">
+                <div class="stars stars-second">
+                    <div class="star">★</div>
+                    <div class="star">★</i></div>
+                    <div class="star">★</i></div>
+                    <div class="star">★</i></div>
+                    <div class="star">★</i></div>
+                </div>
+                <a href="">
+                    <h6 class="trending-name">${product.name}</h6>
+                </a>
+                <h4 class="trending-discounted-price"> ${product.discountedPrice}
+                    <del class="trending-price">${product.price}</del>
+                </h4>
+                <ul class="trending-color-list-second">
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>`
+    )
+    trendingColorList = $.querySelectorAll('.trending-color-list-second')
+    colorsArray = product.colors.split(' ')
+    trendingImgBox = $.querySelectorAll('.trending-img-box-second')
+    colorsArray.forEach(color => {
+        trendingColorList[product.id - 1].insertAdjacentHTML('beforeend',
+            `<li class="${color} trending-color"></li>`
+        )
+    })
+
+    if (product.onsale) {
+        trendingImgBox[product.id - 1].insertAdjacentHTML('afterbegin',
+            `<span class="trending-on-sale">
+            on sale
+        </span>`
+        )
+    }
+
+})
