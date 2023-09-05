@@ -674,3 +674,61 @@
     margin-right: 5px;
 }
 
+/* trending product second design */
+
+.trending-products-second {
+    padding: 70px 50px 5px;
+    position: relative;
+}
+
+.trending-product-second,
+.special-product {
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-bottom: 140px;
+}
+
+.trendingcontainer-second {
+    text-align: center;
+    width: 344px;
+    display: flex;
+    align-items: center;
+}
+
+.trending-icons-second,
+.special-icons {
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    padding: 3px 8px;
+    display: flex;
+    width: max-content;
+    border-radius: 50px;
+    box-shadow: 0 0 12px 0 #dddddd;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.trending-product-second:hover .trending-icons-second,
+.special-product:hover .special-icons {
+    opacity: 1;
+    transition: all 0.2s ease;
+    animation: icons_part2 400ms ease-in-out;
+}
+
+@keyframes icons-second {
+    from {
+        bottom: 0px;
+    }
+
+    to {
+        bottom: 30px;
+    }
+}
+
+.stars-second {
+    justify-content: center;
+}
