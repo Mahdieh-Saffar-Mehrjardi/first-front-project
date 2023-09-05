@@ -1183,3 +1183,51 @@
     border-left: 1px solid #dddddd;
     border-right: 1px solid #dddddd;
 }
+
+/* dark mode */
+
+.dark .category-product-box{
+    border-color: #404040;
+}
+
+.dark .category-title{
+    color: #e7eaec;
+}
+
+.dark .trending-products-first{
+    background-color: #232323;
+    transition: all 0.3s ease;
+}
+
+.dark h2{
+    color: #f1f3f5;
+}
+
+.dark h4 {
+    color: #e7eaec;
+}
+
+.dark p {
+    color: #cfd4da;
+}
+
+.dark .trending-icons-second,
+.dark .special-icons {
+    background-color: #2b2b2b;
+    transition: all 0.3s ease;
+    box-shadow: none;
+}
+
+.dark .recent-story {
+    background-color: #404040;
+    transition: all 0.3s ease;
+}
+
+.dark .app-service-container,
+.dark .app-service-container div {
+    border-color: #404040;
+}
+
+.dark .brand-image img{
+    filter: invert(100);
+}
