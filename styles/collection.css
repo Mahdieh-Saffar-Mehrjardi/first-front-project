@@ -966,3 +966,91 @@ div.range-slider > input[type="range"]::-ms-tooltip {
     pointer-events: none;
     background-color: #dee2e6;
 }
+
+/* dark mode */
+
+body.dark{
+    background-color: #2b2b2b;
+    transition: all 0.3s ease;
+    color: #cfd4da;
+}
+
+.dark .title{
+    background-color: #232323;
+    transition: all 0.3s ease;
+}
+.dark h2 ,
+.dark a{
+    color: #cfd4da;
+}
+.dark .home-title{
+    color: #cfd4da;
+}
+
+.dark .collection-left-top,
+.dark .collection-left-center{
+    border-color: #404040;
+    background-color: #2b2b2b;
+    transition: all 0.3s ease;
+}
+
+.dark .category-title,
+.dark .category-title::after,
+.dark .brand-title::after,
+.dark .colors-title::after,
+.dark .price-title::after,
+.dark h3{
+    color: #eaedef;
+}
+
+.dark .new-product-title,
+.dark .count-text-up,
+.dark .count-text-bottom{
+    color: #dee2e6;
+}
+
+.dark .new-product-head i{
+    color: #eaedef;
+}
+
+.dark .new-product-head,
+.dark .product-container-header,
+.dark .product-count-text,
+.dark .collection-grid-view,
+.dark .product-container-footer,
+.dark .product-page-handler-li,
+.dark .product-page-handler ul li:last-child,
+.dark .product-footer-text{
+    border-color: #404040;
+}
+
+.dark .collection-right-content h4,
+.dark .collection-right-content h5{
+    color: #e7eaec;
+}
+
+.dark li {
+    color: #cfd4da;
+}
+
+.dark .svg-view path{
+    fill: #cfd4da;
+}
+
+.dark .product-filter select{
+    background-color: inherit;
+    color: #cfd4da;
+}
+.dark .product-name{
+    color: #cfd4da;
+}
+.dark .product-discounted-price{
+    color: #e7eaec;
+}
+.dark .product-page-handler .active {
+    background-color: #232323;
+    transition: all 0.3s ease;
+}
+.dark .disable-prev{
+    background-color: inherit;
+}
