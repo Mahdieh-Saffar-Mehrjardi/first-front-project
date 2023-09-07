@@ -1,26 +1,6 @@
 :root{
     --theme-deafult: #ff4c3b;
 }
-/* html {
-    box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
-}
-
-ul {
-    list-style-type: none;
-} */
 
 /* dark mode */
 
@@ -476,7 +456,7 @@ body.dark{
     letter-spacing: 0.03em;
 }
 
-.color-box{
+/* .color-box{
     margin-bottom: 17px;
 }
 
@@ -503,7 +483,41 @@ body.dark{
     background-size: 70%;
     background-repeat: no-repeat;
     position: absolute;
+} */
+
+.product-color-box{
+    display: flex;
 }
+
+.product-color-box li{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 100%;
+    transition: all 0.1s ease;
+    vertical-align: middle;
+    margin-bottom: 17px;
+}
+
+.product-color-box li.selected{
+    border: 1px solid black;
+}
+
+.product-color-box li.selected::after{
+    content: "";
+    position: absolute;
+    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/></svg>");
+    top: 10px;
+    right: 4px;
+    height: 15px;
+    width: 15px;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
 
 .dash-border{
     padding-top: 15px;
