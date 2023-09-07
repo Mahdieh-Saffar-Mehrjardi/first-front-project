@@ -456,35 +456,6 @@ body.dark{
     letter-spacing: 0.03em;
 }
 
-/* .color-box{
-    margin-bottom: 17px;
-}
-
-.color{
-    background-color: silver;
-    border: 1px solid black;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 100%;
-    transition: all 0.1s ease;
-    vertical-align: middle;
-}
-
-.color::after{
-    content: "";
-    position: absolute;
-    background-image: url("data:image/svg+xml;charset=utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'><path fill='%23000' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/></svg>");
-    top: 10px;
-    right: 4px;
-    height: 15px;
-    width: 15px;
-    background-size: 70%;
-    background-repeat: no-repeat;
-    position: absolute;
-} */
-
 .product-color-box{
     display: flex;
 }
@@ -1059,6 +1030,22 @@ iframe {
 
 .steelblue {
     background-color: steelblue;
+}
+
+.wheat {
+    background-color: wheat;
+}
+
+.palegoldenrod {
+    background-color: palegoldenrod;
+}
+
+.dimgrey {
+    background-color: dimgrey;
+}
+
+.black {
+    background-color: black;
 }
 
 .on-sale{
