@@ -395,7 +395,7 @@ productsArrray.forEach(product => {
                 <span class="new-item">
                     new
                 </span>
-                <a href="">
+                <a href="detail.html?id=${product.id}">
                     <img class="product-img" src= "${product.src}" alt="">
                 </a>
                 <div class="product-icons">
